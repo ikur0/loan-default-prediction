@@ -1,0 +1,38 @@
+# Default behavior: normalize all text files to LF in the repo
+* text=auto eol=lf
+
+# Force LF on these explicitly (overrides any local config)
+*.py    text eol=lf
+*.md    text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+*.toml  text eol=lf
+*.txt   text eol=lf
+*.json  text eol=lf
+*.cfg   text eol=lf
+*.ini   text eol=lf
+
+# Shell scripts must always be LF (CRLF breaks them on Linux)
+*.sh    text eol=lf
+
+# Windows batch files keep CRLF
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+
+# Binary files — never touch
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.pdf   binary
+*.parquet binary
+*.pkl   binary
+*.joblib binary
+*.npy   binary
+*.npz   binary
+*.h5    binary
+*.hdf5  binary
+*.zip   binary
+*.gz    binary
+*.tar   binary
