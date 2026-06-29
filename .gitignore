@@ -260,3 +260,7 @@ desktop.ini
 # Local env overrides
 *.local
 .env.local
+
+data/raw/*
+!data/raw/*.dvc
+!data/raw/.gitkeep
