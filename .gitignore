@@ -227,6 +227,8 @@ data/processed/*
 !data/raw/.gitkeep
 !data/interim/.gitkeep
 !data/processed/.gitkeep
+!data/raw/*.dvc
+!data/processed/*.dvc
 
 # Trained model artifacts
 models/*
